@@ -19,7 +19,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #2E3033;
-  --primary: #AAFF00;
+  --primary: #16DB99;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -595,8 +595,8 @@ pre code {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -16px;
+  margin-left: -16px;
 }
 
 .no-gutters {
@@ -619,8 +619,8 @@ pre code {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 16px;
+  padding-left: 16px;
 }
 
 .col {
@@ -2464,10 +2464,12 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   -ms-user-select: none;
   user-select: none;
   border: none;
-  padding: 0.375rem 0.75rem;
+  height: 3rem;
+  padding: 0 24px;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 0.25rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -2517,12 +2519,12 @@ fieldset:disabled a.btn {
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
-  background-color: #B8FF2B;
+  background-color: #5E14CC;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
-  background-color: #B8FF2B;
+  background-color: #5E14CC;
 }
 
 .btn-secondary {
@@ -6133,7 +6135,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #2E3033 !important;
+  background-color: #19191C !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
