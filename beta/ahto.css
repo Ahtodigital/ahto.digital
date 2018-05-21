@@ -1,0 +1,421 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+	text-decoration: none;
+	transition: all 300ms;
+	letter-spacing: 0.025em;
+	color: var(--white);
+}
+
+:root {
+	--primary: #7A45E6;
+	--primary-dark: #665980;
+	--white: #fff;
+	--dark: #212329;
+	--dark-light: #25272E;
+	--dark-shadow: #15161A;
+}
+
+body {
+	float: left;
+	display: grid;
+	grid-template-areas: "header" "porque" "fazemos" "portfolio" "conteúdo" "footer";
+}
+
+
+#header,
+#porque,
+#fazemos,
+#portfolio,
+#conteudo,
+#footer,
+#contato {
+	display: grid;
+	align-content: center;
+	grid-auto-rows: minmax(100vh, auto);
+	position: relative;
+}
+
+#header {
+	background: url('img/bg0.webp') no-repeat center center fixed;
+	background-size: cover;
+}
+
+#header .overlay {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-column: 1;
+	grid-row: 1;
+	background: linear-gradient(to bottom, rgba(33,35,41,0) 0%,rgba(33,35,41,1) 100%);
+	z-index: 0;
+}
+
+#header .wrap {
+	z-index: 99;
+}
+
+
+/*
+===========================
+======= UI Templates ======
+===========================
+*/
+.wrap,
+.fullscren,
+
+.halfscreenX,
+.halfScreenY,
+
+.thirdScreenX {
+	display: grid;
+}
+
+.wrap {
+	display: grid;
+	grid-auto-rows: minmax(100vh, auto);
+}
+
+.fullscren {
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+
+.halfScreenX {
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.halfScreenY {
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+
+.thirdScreenX {
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 2fr;
+}
+
+
+#porque {
+	background: url('img/bg2.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+
+#contato {
+	background: url('img/bg3.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+
+
+
+.logo {
+	width: 8em;
+	color: var(--white);
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.logo p {
+	margin-top: .5em;
+	font-size: 1.5em;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.gallery img {
+	float: left;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+
+.card-deck {
+	margin: 0 -1em;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 1em;
+}
+
+.card {
+	border-radius: .25em;
+	background-color: var(--white);
+	padding: 1.5em;
+	background-color: var(--dark-light);
+	box-shadow: 0px 3px 6px 0px rgba(21,22,26,0.33);
+}
+
+.card-header {
+	display: grid;
+	grid-template-columns: 1fr 5em;
+}
+
+.wire {
+	width: 10em;
+	position: absolute;
+}
+
+/*
+===========================
+========== Colors =========
+===========================
+*/
+
+.bg-dark {
+	background-color: var(--dark);
+}
+
+.bg-card {
+	background-color: var(--dark);
+}
+
+.color-light {
+	opacity: .33;
+}
+
+.color-medium {
+	opacity: .66;
+}
+
+
+/*
+===========================
+========== Spaces =========
+===========================
+*/
+
+.mb1 {
+	margin-bottom: 1em;
+}
+
+.mb2 {
+	margin-bottom: 2.5em;
+}
+
+.mb3 {
+	margin-bottom: 5em;
+}
+
+.mb4 {
+	margin-bottom: 10em;
+}
+
+.ptb2 {
+	padding: 2.5em 0;
+}
+
+.ptb3 {
+	padding: 5em 0;
+}
+
+.pd2 {
+	padding: 2.5em;
+}
+
+
+
+
+/*
+===========================
+========= Helpers =========
+===========================
+*/
+
+.grid {
+	display: grid;
+}
+
+.y-center {
+	align-self: center;
+}
+
+.center-self {
+	justify-self: center;
+	align-self: center;
+	align-content: center;
+}
+
+
+
+/*
+===========================
+========= Buttons =========
+===========================
+*/
+
+button, .btn {
+	border: none;
+	padding: 1em 2.5em;
+	border-radius: 64px;
+	font-weight: 500;
+	margin: 0 auto;
+	color: #fff;
+	cursor: pointer;
+}
+
+.btn-primary-outline {
+	background-color: var(--primary);
+	border: 1px solid var(--primary);
+}
+
+.btn-primary-outline:hover {
+	background-color: var(--primary);
+	border: 1px solid var(--primary);
+}
+
+
+.btn-primary {
+	background-color: var(--primary);
+}
+
+
+
+/*
+===========================
+======== Typography =======
+===========================
+*/
+
+.text-center {
+	text-align: center;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-white {
+	color: #fff;
+}
+
+.text-primary {
+	color: var(--primary);
+}
+
+.text-dark-primary {
+	color: var(--dark-primary);
+}
+
+.display-1 {
+	font-weight: 300;
+	font-size: 6rem;
+}
+
+.display-2 {
+	font-weight: 300;
+	font-size: 5.5rem;
+}
+
+.display-3 {
+	font-weight: 300;
+	font-size: 4.5rem;
+}
+
+.display-4 {
+	font-weight: 300;
+	font-size: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.75rem;
+}
+
+h4 {
+	font-size: 1.5rem;
+}
+
+h5 {
+	font-size: 1.25rem;
+}
+
+h6 {
+	font-size: 1rem;
+}
+
+
+p {
+
+}
+
+.text-big {
+	font-size: 2.5rem;
+}
+
+.text-medium {
+	font-size: 1.8rem;
+}
+
+.text-small {
+	font-size: 1.2rem;
+}
+
+
+/*
+===========================
+====== Media Queries ======
+===========================
+*/
+
+
+@media (min-width: 640px) {
+
+	.card-deck {
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 1em;
+	}
+
+	.halfScreenY {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+
+}
+
+@media (min-width: 960px) {
+
+	.gallery {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+
+}
+
+@media (min-width: 1040px) {
+
+	.wrap {
+		width: 100%;
+		max-width: 1040px;
+	}
+
+	.card {
+		padding: 2.5em;
+	}
+
+	.card-deck {
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 1em;
+	}
+
+
+}
