@@ -1,2 +1,0 @@
-# ahto.digital
-Homepage
