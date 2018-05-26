@@ -120,20 +120,6 @@ h4 {
 	border-radius: 3em;
 }
 
-a h3 {
-	color: var(--primary);
-	opacity: 1;
-}
-
-a:hover h3 {
-	opacity: 0.6;
-}
-
-
-.hide {
-	display: none;
-}
-
 .btn-primary {
 	color: var(--white);
 	background-color: var(--primary);
@@ -204,24 +190,4 @@ a:hover h3 {
 		grid-template-columns: auto 2fr;
 	}
 
-	.l-hide {
-		display: none;
-	}
-
-	.l-show {
-		display: block;
-	}
-
-}
-
-/* === Animations === */
-
-.move {
-	animation: move 3s infinite alternate;
-	animation-timing-function: ease-in-out;
-}
-
-@keyframes move {
-	from { transform: translate(0, 11px); }
-	to   { transform: translate(0, -11px); }
 }
