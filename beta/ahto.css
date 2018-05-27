@@ -19,8 +19,10 @@
 }
 
 body {
-	display: grid;
-	grid-template-areas: "intro";
+	background-color: var(--dark);
+	float: left;
+	width: 100%;
+	height: 100vh;
 }
 
 div,
@@ -31,7 +33,9 @@ section,
 
 #intro {
 	grid-auto-rows: 3em auto;
+	grid-auto-columns: 1fr;
 }
+
 
 
 
@@ -44,7 +48,11 @@ section,
 .wrap {
 	width: 100%;
 	max-width: 1280px;
-	margin: 10vh auto;
+	padding: 48px;
+}
+
+.um {
+	grid-template-columns: 1fr;
 }
 
 .dois {
@@ -118,12 +126,12 @@ h3 {
 }
 
 .center-self {
-    justify-self: center;
-    align-self: center;
+	justify-self: center;
+	align-self: center;
 }
 
 .center-y {
-    align-self: center;
+	align-self: center;
 }
 
 
@@ -134,6 +142,10 @@ h3 {
 .section-nav {
 	display: grid;
 	align-items: start;
+}
+
+.s-hide {
+	display: none;
 }
 
 /* === Backgrounds === */
@@ -218,4 +230,43 @@ h3 {
 @keyframes move {
 	from { transform: translate(0, 11px); }
 	to   { transform: translate(0, -11px); }
+}
+
+/* === Animações === */
+
+.move {
+	animation: move 3s infinite alternate;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes move {
+	from { transform: translate(0, 11px); }
+	to   { transform: translate(0, -11px); }
+}
+
+@media (min-width: 640px) {
+
+	.m-dois {
+		grid-template-columns: 1fr 1fr;
+	}
+
+}
+
+@media (min-width: 1040px) {
+
+	.l-dois {
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 5em;
+	}
+
+	.l-show {
+		display: block;
+	}
+
+	.wrap {
+		width: 100%;
+		max-width: 1280px;
+		margin: 10vh auto;
+	}
+
 }
