@@ -1,18 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129.522 142.286">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-        stroke: #823dcc;
-      }
-    </style>
-  </defs>
-  <g id="Group_32" data-name="Group 32" transform="translate(-559.219 -3111.193)">
-    <path id="Path_182" data-name="Path 182" class="cls-1" d="M0,76.8,64,0l76.8,76.8L115.2,128Z" transform="translate(688 3112) rotate(90)"/>
-    <path id="Path_183" data-name="Path 183" class="cls-1" d="M115.2,0,0,25.6l38.4,89.6L140.8,38.4Z" transform="translate(675.2 3112) rotate(90)"/>
-    <path id="Path_184" data-name="Path 184" class="cls-1" d="M0,0,51.2,12.8" transform="translate(688 3176) rotate(90)"/>
-    <path id="Path_185" data-name="Path 185" class="cls-1" d="M0,25.6V0" transform="translate(636.8 3252.8) rotate(90)"/>
-    <path id="Path_186" data-name="Path 186" class="cls-1" d="M76.8,0H0" transform="translate(560 3150.4) rotate(90)"/>
-    <path id="Path_187" data-name="Path 187" class="cls-1" d="M0,38.4V0" transform="translate(649.6 3112) rotate(90)"/>
-  </g>
-</svg>
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225.24 159.67"><defs><style>.cls-1{fill:#7a45e6;}.cls-2{fill:none;stroke:#7a45e6;stroke-linejoin:round;}</style></defs><title>Prancheta 3</title><path class="cls-1" d="M59.47,1.34l81.47,3.27,82,120.07L50.44,136.56l9-135.22m-.93-1L49.37,137.63l175.41-12.07L141.48,3.63,58.54.3Z"/><path class="cls-1" d="M6.35,5l175.48,26L124.58,158.14,1.44,77.79,6.35,5M5.42,3.81l-5,74.5L125,159.62,183.29,30.13,5.42,3.81Z"/><line class="cls-2" x1="224.78" y1="125.56" x2="183.29" y2="30.13"/><line class="cls-2" x1="125.01" y1="159.62" x2="141.48" y2="3.63"/><line class="cls-2" x1="58.54" y1="0.3" x2="0.4" y2="78.31"/><line class="cls-2" x1="5.42" y1="3.81" x2="49.37" y2="137.63"/></svg>

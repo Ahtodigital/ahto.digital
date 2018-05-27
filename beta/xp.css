@@ -1,0 +1,335 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	text-decoration: none;
+	color: var(--dark);
+	transition: all 300ms;
+	font-weight: 300;
+	letter-spacing: 0.033em;
+	/*	border: 1px solid red;*/
+}
+
+:root {
+	--primary: #823DCC;																																																		
+	--white: #fff;
+	--light: #F9FAFC;
+	--dark: #111114;
+	--dark-light: #1A1A1F;
+}
+
+html,
+body {
+	display: grid;
+	width: 100%;
+	min-height: 100vh;
+	grid-template-columns: 1fr;
+	grid-auto-rows: auto;
+}
+
+
+/* === Grid Mobile === */
+
+section,
+.grid {
+	display: grid;
+}
+
+.wrap {
+	display: grid;
+	width: 100%;
+	max-width: 80vw;
+	margin: 6vh 10vw;
+	grid-template-columns: 1fr;
+	grid-auto-rows: auto;
+}
+
+.grid,
+.wrap,
+.um,
+.dois,
+.tres,
+.quatro {
+	display: grid;
+	grid-gap: 1em;
+	grid-auto-rows: auto;
+}
+
+.um {
+	grid-template-columns: 1fr;
+}
+
+.dois {
+	grid-template-columns: 1fr 1fr;
+}
+
+.tres {
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.quatro {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card {
+	padding: 1em;
+	border-radius: 0.5em;
+	align-items: end;
+	grid-template
+}
+
+.galeria {
+	grid-gap: 0 !important;
+}
+
+/* === UI Helpers === */
+
+.fullscreen {
+	grid-auto-rows: minmax(100vh, auto); 
+}
+
+.fluid {
+	width: 100%;
+}
+
+.center-self {
+	align-self: center;
+	justify-self: center;
+}
+
+.end-self {
+	align-self: end;
+}
+
+.center {
+	align-items: center;
+	justify-content: center;
+}
+
+.middle-y {
+	align-self: center;
+}
+
+.middle-x {
+	justify-self: center;
+}
+
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+.center {
+	justify-content: center;
+}
+
+
+/* === Tipografia === */
+
+h1 {
+	font-size: 2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+}
+
+h3 {
+	font-size: 1rem;
+}
+
+.txt-white {
+	color: #fff;
+}
+
+.txt-center {
+	text-align: center;
+}
+
+
+
+/* === Buttons === */
+
+.btn,
+.icon-btn {
+	display: block;
+	border: none;
+	font-size: 1.5em;
+	font-weight: 400;
+	padding: 1.5em 1.5em;
+	border-radius: 0.25em;
+}
+
+.icon-btn {
+	display: grid;
+}
+
+.btn-dark-light {
+	color: var(--white);
+	background-color: var(--dark-light);
+}
+
+.btn-primary {
+	color: var(--white);
+	background-color: var(--primary);
+}
+
+
+
+/* === Backgrounds === */
+
+.bg-dark {
+	background-color: var(--dark);
+}
+
+.bg-dark-light {
+	background-color: var(--dark-light);
+}
+
+.bg-design {
+	background: url('https://media.giphy.com/media/3oFzm55lvBU1m9orGo/giphy.gif') no-repeat center center;
+	background-size: cover;
+}
+
+.bg-tecnologia {
+	background: url('https://media.giphy.com/media/1k4PPf8zKsAqHogX9y/giphy.gif') no-repeat center center;
+	background-size: cover;
+}
+.bg-marketing {
+	background: url('https://media.giphy.com/media/kG1XSqwWKqQ9TTyjId/giphy.gif') no-repeat center center;
+	background-size: cover;
+}
+
+
+
+/* === Personalisados === */
+
+.logo {
+	display: grid;
+	grid-template-columns: 5em 1fr;
+	grid-template-rows: 2em;
+}
+
+.logo p {
+	margin-left: 1.25rem;
+	font-size: 1.25rem;
+	color: var(--white);
+	align-self: center;
+}
+
+.bg-intro {
+	background: url('img/intro.webp') no-repeat center center;
+	background-size: cover;
+}
+
+.arrow-left {
+	width: 1em;
+	position: fixed;
+	z-index: 99;
+	margin-left: 4vw;
+	top: 50%;
+}
+
+.arrow-right {
+	width: 16px;
+	position: fixed;
+	z-index: 99;
+	margin-right: 4vw;
+	top: 50%;
+	right: 0;
+}
+
+/* === Animações === */
+
+.move {
+	animation: move 2s infinite alternate;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes move {
+	from { transform: translate(0, 16px); }
+	to   { transform: translate(0, -16px); }
+}
+
+
+/* === Media Queries === */
+
+@media (min-width: 960px) {
+
+	.wrap {
+		display: grid;
+		width: 100%;
+		max-width: 80vw;
+		margin: 20vh 10vw;
+		grid-template-columns: 1fr;
+		grid-auto-rows: auto;
+	}
+
+	h1 {
+		font-size: 3em;
+	}
+
+	h2 {
+		font-size: 3rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
+
+	.grid,
+	.wrap,
+	.um,
+	.dois,
+	.tres,
+	.quatro {
+		grid-gap: 3em;
+	}
+
+	.l-dois {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.l-tres {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.l-quatro {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+	.l-center {
+		align-self: center;
+		justify-self: center;
+	}
+
+	.l-middle-y {
+		align-self: center;
+	}
+
+
+	.l-show {
+		display: block;
+	}
+
+	.l-hide {
+		display: none;
+	}
+
+	.l-middle-y {
+		align-items: center;
+	}
+
+	.card {
+	padding: 2em;
+	border-radius: 0.5em;
+	align-items: end;
+	grid-template
+}
+
+}
