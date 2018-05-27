@@ -1,0 +1,217 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	text-decoration: none;
+	color: var(--dark);
+	transition: all 300ms;
+	font-weight: 300;
+	letter-spacing: 0.033em;
+}
+
+:root {
+	--primary: #823DCC;																																																		
+	--white: #fff;
+	--light: #F9FAFC;
+	--dark: #111114;
+}
+
+body {
+	display: grid;
+	grid-template-areas: "intro";
+}
+
+div,
+section,
+.wrap {
+	display: grid;	
+}
+
+#intro {
+	grid-auto-rows: 3em auto;
+}
+
+
+
+/* === GRID === */
+
+.grid {
+	display: grid;
+}
+
+.wrap {
+	width: 100%;
+	max-width: 1280px;
+	margin: 10vh auto;
+}
+
+.dois {
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 3em;
+}
+
+
+.tres {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 3em;
+}
+
+.quatro {
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 3em;
+}
+
+/* === Typography === */
+
+
+.txt-white {
+	color: var(--white);
+}
+
+
+.display-1 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+
+
+/* === Buttons === */
+
+.btn,
+.icon-btn {
+	border: none;
+	font-weight: 400;
+	padding: 1em 2em;
+	border-radius: 0.5em;
+}
+
+.icon-btn {
+	display: grid;
+}
+
+.btn-primary {
+	color: var(--dark);
+	background-color: var(--light);
+}
+
+
+
+
+/* === Helpers === */
+
+.fullscreen {
+	grid-template-rows: minmax(100vh, auto);
+}
+
+.fluid {
+	width: 100%;
+}
+
+.center-self {
+    justify-self: center;
+    align-self: center;
+}
+
+.center-y {
+    align-self: center;
+}
+
+
+.end-self {
+	align-self: end;
+}
+
+.section-nav {
+	display: grid;
+	align-items: start;
+}
+
+/* === Backgrounds === */
+
+.bg-dark {
+	background-color: var(--dark);
+}
+
+.intro {
+	background: url('img/intro.webp') no-repeat center center fixed;
+	background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* === Personalizados === */
+
+.logo {
+	grid-template-columns: 128px auto;
+	
+}
+
+.logo p {
+	margin-left: 1.5rem;
+	font-size: 1.5rem;
+	color: var(--white);
+	align-self: center;
+}
+
+.arrow-left {
+	width: 1em;
+	position: fixed;
+	z-index: 99;
+	margin-left: 5vw;
+	top: 50%;
+}
+
+.arrow-right {
+	width: 16px;
+	position: fixed;
+	z-index: 99;
+	margin-right: 5vw;
+	top: 50%;
+	right: 0;
+}
+
+.bg-design {
+	background: url('https://media.giphy.com/media/l0HlzssfVs38sybuw/giphy.gif') no-repeat center center;
+	background-size: cover;
+}
+
+.bg-tecnologia {
+	background: url('https://media.giphy.com/media/3ohhwjmGOWZ01YYQ80/giphy.gif') no-repeat center center;
+	background-size: cover;
+}
+.bg-marketing {
+	background: url('https://media.giphy.com/media/grcPfxG7M2Hdu/giphy.gif') no-repeat center center;
+	background-size: cover;
+}
+
+.card {
+	padding: 3em;
+	border-radius: 0.5em;
+	align-items: end;
+}
+
+/* === Animações === */
+
+.move {
+	animation: move 3s infinite alternate;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes move {
+	from { transform: translate(0, 11px); }
+	to   { transform: translate(0, -11px); }
+}
