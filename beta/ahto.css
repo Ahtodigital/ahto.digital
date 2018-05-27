@@ -63,6 +63,10 @@ section,
 	grid-gap: 3em;
 }
 
+.galeria {
+	grid-gap: 8px;
+}
+
 /* === Typography === */
 
 
