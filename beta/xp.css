@@ -159,9 +159,9 @@ h3 {
 .icon-btn {
 	display: block;
 	border: none;
-	font-size: 1.5em;
+	font-size: 1em;
 	font-weight: 400;
-	padding: 1.5em 1.5em;
+	padding: 1em 1.5em;
 	border-radius: 0.25em;
 }
 
@@ -192,7 +192,7 @@ h3 {
 }
 
 .bg-design {
-	background: url('https://media.giphy.com/media/3oFzm55lvBU1m9orGo/giphy.gif') no-repeat center center;
+	background: url('https://media.giphy.com/media/n9vAXCptPhbr2/giphy.gif') no-repeat center center;
 	background-size: cover;
 }
 
@@ -202,6 +202,11 @@ h3 {
 }
 .bg-marketing {
 	background: url('https://media.giphy.com/media/kG1XSqwWKqQ9TTyjId/giphy.gif') no-repeat center center;
+	background-size: cover;
+}
+
+.bg-nos {
+	background: url('https://media.giphy.com/media/n9vAXCptPhbr2/giphy.gif') no-repeat center center;
 	background-size: cover;
 }
 
@@ -326,10 +331,14 @@ h3 {
 	}
 
 	.card {
-	padding: 2em;
-	border-radius: 0.5em;
-	align-items: end;
-	grid-template
-}
+		padding: 2em;
+		border-radius: 0.5em;
+		align-items: end;
+	}
+
+	.btn,
+	.icon-btn {
+		padding: 1.5em 1.5em;
+	}
 
 }
