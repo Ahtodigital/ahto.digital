@@ -12,12 +12,22 @@
 	/*	border: 1px solid red;*/
 }
 
+a {
+	display: block;
+}
+
+p {
+	line-height: 1.5;
+	font-size: 1.2rem;
+}
+
 :root {
 	--primary: #823DCC;																																																		
 	--white: #fff;
 	--light: #F9FAFC;
-	--dark: #111114;
-	--dark-light: #1A1A1F;
+	--dark: #212329;
+	--dark-light: #25272E;
+	--whatsapp: #25D366;
 }
 
 html,
@@ -40,8 +50,8 @@ section,
 .wrap {
 	display: grid;
 	width: 100%;
-	max-width: 80vw;
-	margin: 6vh 10vw;
+	max-width: 88vw;
+	margin: 6vh 6vw;
 	grid-template-columns: 1fr;
 	grid-auto-rows: auto;
 }
@@ -74,10 +84,19 @@ section,
 }
 
 .card {
-	padding: 1em;
-	border-radius: 0.5em;
-	align-items: end;
-	grid-template
+	padding: 6vw;
+	grid-gap: 1em !important;
+	border-radius: 0.25em;
+}
+
+.card-header {
+	display: grid;
+	grid-template-columns: 1fr 64px;
+}
+
+.card-header i {
+	font-size: 3em;
+	justify-self: end;
 }
 
 .galeria {
@@ -89,6 +108,33 @@ section,
 .fullscreen {
 	grid-auto-rows: minmax(100vh, auto); 
 }
+
+.contato {
+	display: block;
+	z-index: 99;
+	position: fixed;
+	right: 2em;
+	bottom: 2em;
+	background-color: var(--whatsapp);
+	border-radius: 24px;
+	width: 3em;
+	height: 3em;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+
+.contato a {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+}
+
+.contato a img {
+	width: 1.5em;
+}
+
+
 
 .fluid {
 	width: 100%;
@@ -128,6 +174,15 @@ section,
 	justify-content: center;
 }
 
+.shadow {
+	box-shadow: 0px 3px 6px 0px rgba(21,22,26,0.33);
+}
+
+.magic-padding {
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
 
 /* === Tipografia === */
 
@@ -140,11 +195,15 @@ h2 {
 }
 
 h3 {
-	font-size: 1rem;
+	font-size: 1.5rem;
 }
 
 .txt-white {
 	color: #fff;
+}
+
+.txt-primary {
+	color: var(--primary);
 }
 
 .txt-center {
@@ -163,6 +222,7 @@ h3 {
 	font-weight: 400;
 	padding: 1em 1.5em;
 	border-radius: 0.25em;
+	cursor: pointer;
 }
 
 .icon-btn {
@@ -207,6 +267,11 @@ h3 {
 
 .bg-nos {
 	background: url('https://media.giphy.com/media/n9vAXCptPhbr2/giphy.gif') no-repeat center center;
+	background-size: cover;
+}
+
+.bg-contato {
+	background: url('img/look.webp') no-repeat center center fixed;
 	background-size: cover;
 }
 
@@ -331,10 +396,13 @@ h3 {
 	}
 
 	.card {
-		padding: 2em;
-		border-radius: 0.5em;
-		align-items: end;
+		padding: 3vw;
 	}
+
+	.magic-padding {
+	padding-left: 3vw;
+	padding-right: 3vw;
+}
 
 	.btn,
 	.icon-btn {
