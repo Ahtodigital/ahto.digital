@@ -14,6 +14,7 @@
 
 a {
 	display: block;
+	cursor: pointer;
 }
 
 p {
@@ -22,11 +23,12 @@ p {
 }
 
 :root {
-	--primary: #823DCC;																																																		
+	--brand-primary: #396C99;
+	--brand-secondary: #55BAE6;
+	--brand-terceary: #A9F255;																																															
 	--white: #fff;
-	--light: #F9FAFC;
-	--dark: #212329;
-	--dark-light: #25272E;
+	--dark: #000;
+	--light: #F5F5FA;
 	--whatsapp: #25D366;
 }
 
@@ -86,7 +88,7 @@ section,
 .card {
 	padding: 6vw;
 	grid-gap: 1em !important;
-	border-radius: 0.25em;
+	border-radius: 1em;
 }
 
 .card-header {
@@ -170,10 +172,6 @@ section,
 	display: none;
 }
 
-.center {
-	justify-content: center;
-}
-
 .shadow {
 	box-shadow: 0px 3px 6px 0px rgba(21,22,26,0.33);
 }
@@ -202,8 +200,12 @@ h3 {
 	color: #fff;
 }
 
-.txt-primary {
-	color: var(--primary);
+.txt-dark {
+	color: var(--dark);
+}
+
+.txt-brand-primary {
+	color: var(--brand-primary);
 }
 
 .txt-center {
@@ -220,80 +222,82 @@ h3 {
 	border: none;
 	font-size: 1em;
 	font-weight: 400;
-	padding: 1em 1.5em;
-	border-radius: 0.25em;
+	padding: 1em 3em;
+	border-radius: 4em;
 	cursor: pointer;
+	font-weight: 500;
 }
 
 .icon-btn {
 	display: grid;
 }
 
+a {
+	color: #fff;
+}
+
 .btn-dark-light {
-	color: var(--white);
+	color: var(--white)/
 	background-color: var(--dark-light);
 }
 
-.btn-primary {
+.btn-brand-primary {
 	color: var(--white);
-	background-color: var(--primary);
+	background-color: var(--brand-primary);
+}
+
+.btn-brand-secondary {
+	color: var(--dark);
+	background-color: var(--brand-secondary);
+}
+
+.btn-brand-terceary {
+	color: var(--dark);
+	background-color: var(--brand-terceary);
 }
 
 
 
 /* === Backgrounds === */
 
-.bg-dark {
-	background-color: var(--dark);
+.bg-brand-primary {
+	background-color: var(--brand-primary);
 }
 
-.bg-dark-light {
-	background-color: var(--dark-light);
+.bg-white {
+	background-color: var(--white);
 }
 
-.bg-design {
-	background: url('https://media.giphy.com/media/n9vAXCptPhbr2/giphy.gif') no-repeat center center;
-	background-size: cover;
+.bg-light {
+	background-color: var(--light);
 }
 
-.bg-tecnologia {
-	background: url('https://media.giphy.com/media/1k4PPf8zKsAqHogX9y/giphy.gif') no-repeat center center;
-	background-size: cover;
-}
-.bg-marketing {
-	background: url('https://media.giphy.com/media/kG1XSqwWKqQ9TTyjId/giphy.gif') no-repeat center center;
-	background-size: cover;
+.bg-brand-secondary {
+	background-color: var(--brand-secondary);
 }
 
-.bg-nos {
-	background: url('https://media.giphy.com/media/n9vAXCptPhbr2/giphy.gif') no-repeat center center;
-	background-size: cover;
+.bg-brand-terceary {
+	background-color: var(--brand-terceary);
 }
-
-.bg-contato {
-	background: url('img/look.jpg') no-repeat center center fixed;
-	background-size: cover;
-}
-
-
 
 /* === Personalisados === */
 
 .logo {
 	display: grid;
-	grid-template-columns: 5em 1fr;
-	grid-template-rows: 2em;
+	grid-template-columns: 8em 1fr;
 }
 
-.logo p {
-	margin-left: 1.25rem;
-	font-size: 1.25rem;
-	color: var(--white);
-	align-self: center;
+.display1 {
+	font-weight: 500;
 }
+
+.card img {
+	padding: 25%;
+}
+
 
 .bg-intro {
-	background: url('img/intro.jpg') no-repeat center center;
+	background: url('img/psicologo-e-gestalt-terapeura-caio-costi.jpg') no-repeat center center;
 	background-size: cover;
 }
 
@@ -332,12 +336,8 @@ h3 {
 @media (min-width: 960px) {
 
 	.wrap {
-		display: grid;
-		width: 100%;
 		max-width: 80vw;
 		margin: 20vh 10vw;
-		grid-template-columns: 1fr;
-		grid-auto-rows: auto;
 	}
 
 	h1 {
@@ -358,7 +358,7 @@ h3 {
 	.dois,
 	.tres,
 	.quatro {
-		grid-gap: 3em;
+		grid-gap: 2em;
 	}
 
 	.l-dois {
@@ -400,13 +400,29 @@ h3 {
 	}
 
 	.magic-padding {
-	padding-left: 3vw;
-	padding-right: 3vw;
-}
+		padding-left: 3vw;
+		padding-right: 3vw;
+	}
 
 	.btn,
 	.icon-btn {
-		padding: 1.5em 1.5em;
+		padding: 1.5em 3em;
 	}
+
+	.logo {
+		display: grid;
+		grid-template-columns: 12em 1fr;
+	}
+
+}
+
+@media (min-width: 1920px) {
+
+	.wrap {
+		max-width: 60vw;
+		margin: 20vh 20vw;
+	}
+
+
 
 }
